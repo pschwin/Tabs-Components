@@ -24,10 +24,10 @@ class TabLink {
     const linksSelected = document.querySelector('.tabs-links-selected');
 
     // Using a loop or the forEach method remove the 'tabs-link-selected' class from all of the links
-    Array.from(links).forEach(linker => linker.classList.remove('.tabs-link-removed'));
+    Array.from(links).forEach(callItWhatever => callItWhatever.classList.remove('.tabs-link-selected'));
 
     // Add a class named "tabs-link-selected" to this link
-    this.element = this.element.classList.add('tabs-link-selected');
+    this.element = this.element.classList.add('.tabs-link-selected');
     
     // Call the select method on the item associated with this link
 
@@ -47,6 +47,8 @@ class TabItem {
   select() {
     // Select all ".tabs-item" elements from the DOM
     const items = document.querySelector('.tabs-item');
+
+    console.log("What?????");
 
     // Remove the class "tabs-item-selected" from each element
     
