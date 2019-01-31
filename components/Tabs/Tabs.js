@@ -51,9 +51,10 @@ class TabItem {
     console.log("What?????");
 
     // Remove the class "tabs-item-selected" from each element
-    
+    this.element = this.element.classList.remove('.tabs-link-selected');
     // Add a class named "tabs-item-selected" to this element
-    //this.element;
+    this.element = this.element.classList.remove('.tabs-link-selected');
+
   }
 }
 
